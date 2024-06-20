@@ -1,0 +1,109 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI';
+}
+
+body{
+    background-color: #1D0840;
+}
+.sanyeticMain{
+    height: 100vh;
+}
+.sanyeticMain--Section1__article1{
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    align-items: center;
+}
+.sanyeticMain--Section1__article1--imgLogoLeft{
+    width: 25%;
+    height: 50%;
+}
+.sanyeticMain--Section1__article1--imgLogoRight{
+    width: 25%;
+    height: 50%;
+}
+.sanyeticMain--Section1__article1--contLogoTitleBtn__logo{
+    width: 50%;
+    margin-bottom: 20px;
+}
+.sanyeticMain--Section1__article1--contLogoTitleBtn__title{
+    font-size: 30px;
+    color: white;
+
+}
+.sanyeticMain--Section1__article1--contLogoTitleBtn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+}
+.sanyeticMain--Section1__article1--contLogoTitleBtn__btn{
+    text-decoration: none;
+    padding: 0.7em 1.5em;
+    background-color: #4E0BD2;
+    color: white;
+    border-radius: 50px;
+    margin: 1em;
+    margin-top: 50px;
+}
+.sanyeticMain--Section1__article1--contLogoTitleBtn__btn:hover{
+    background-color: #5d1be0;
+    cursor: pointer;
+}
+.sanyeticMain--Section1__article2{
+    display: flex;
+}
+
+
+/* Seccion 2 */
+.sanyeticMain--Section2{
+    background-image: url(/Sanyetic/img/Empezar.png);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #2D114C;
+    width: 100%;
+}
+.sanyeticMain--Section2__contLTP--L{
+    width: 30%;
+    color: white;
+    text-align: center;
+}
+.sanyeticMain--Section2__contLTP--T{
+    width: 60%;
+    color: white;
+    margin: 1em 0px;
+    font-size: 40px;
+}
+.sanyeticMain--Section2__contLTP--P{
+    width: 50%;
+    color: white;
+    font-size: 20px;
+    margin: 2em 0px;
+}
+
+.sanyeticMain--Section2__contLStores{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+.sanyeticMain--Section2__contLStores--cnt{
+    display: flex;
+    text-align: left;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin: 0.5em;
+}
+.sanyeticMain--Section2__contLStores--cntT{
+    color: white;
+    margin: 0px 30px;
+}
