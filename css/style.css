@@ -61,7 +61,7 @@ body{
 
 /* Seccion 2 */
 .sanyeticMain--Section2{
-    background-image: url(/Sanyetic/img/Empezar.png);
+    background-image: url(/img/Empezar.png);
     display: flex;
     flex-direction: column;
     align-items: flex-end;
