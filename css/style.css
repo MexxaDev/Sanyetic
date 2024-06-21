@@ -1,22 +1,22 @@
-*{
+* {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
     font-family: 'Segoe UI';
 }
 
-body{
+body {
     background-color: #1D0840;
 }
 
-.sanyeticMain{
+.sanyeticMain {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
 /* Sección 1 */
-.sanyeticMain--Section1__article1{
+.sanyeticMain--Section1__article1 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,22 +26,22 @@ body{
 }
 
 .sanyeticMain--Section1__article1--imgLogoLeft,
-.sanyeticMain--Section1__article1--imgLogoRight{
+.sanyeticMain--Section1__article1--imgLogoRight {
     width: 50%;
     height: auto;
 }
 
-.sanyeticMain--Section1__article1--contLogoTitleBtn__logo{
+.sanyeticMain--Section1__article1--contLogoTitleBtn__logo {
     width: 70%;
     margin-bottom: 20px;
 }
 
-.sanyeticMain--Section1__article1--contLogoTitleBtn__title{
+.sanyeticMain--Section1__article1--contLogoTitleBtn__title {
     font-size: 24px;
     color: white;
 }
 
-.sanyeticMain--Section1__article1--contLogoTitleBtn{
+.sanyeticMain--Section1__article1--contLogoTitleBtn {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,7 +49,7 @@ body{
     width: 100%;
 }
 
-.sanyeticMain--Section1__article1--contLogoTitleBtn__btn{
+.sanyeticMain--Section1__article1--contLogoTitleBtn__btn {
     text-decoration: none;
     padding: 0.7em 1.5em;
     background-color: #4E0BD2;
@@ -59,13 +59,13 @@ body{
     margin-top: 20px;
 }
 
-.sanyeticMain--Section1__article1--contLogoTitleBtn__btn:hover{
+.sanyeticMain--Section1__article1--contLogoTitleBtn__btn:hover {
     background-color: #5d1be0;
     cursor: pointer;
 }
 
 /* Sección 2 */
-.sanyeticMain--Section2{
+.sanyeticMain--Section2 {
     background-image: url(/Sanyetic/img/Empezar.png);
     display: flex;
     flex-direction: column;
@@ -78,13 +78,13 @@ body{
     padding: 20px;
 }
 
-.sanyeticMain--Section2__contLTP--L{
+.sanyeticMain--Section2__contLTP--L {
     width: 40%;
     color: white;
     text-align: center;
 }
 
-.sanyeticMain--Section2__contLTP--T{
+.sanyeticMain--Section2__contLTP--T {
     width: 80%;
     color: white;
     margin: 1em 0px;
@@ -92,7 +92,7 @@ body{
     text-align: center;
 }
 
-.sanyeticMain--Section2__contLTP--P{
+.sanyeticMain--Section2__contLTP--P {
     width: 80%;
     color: white;
     font-size: 18px;
@@ -100,7 +100,7 @@ body{
     text-align: center;
 }
 
-.sanyeticMain--Section2__contLStores{
+.sanyeticMain--Section2__contLStores {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -108,7 +108,7 @@ body{
     justify-content: center;
 }
 
-.sanyeticMain--Section2__contLStores--cnt{
+.sanyeticMain--Section2__contLStores--cnt {
     display: flex;
     text-align: left;
     align-items: center;
@@ -117,57 +117,160 @@ body{
     margin: 0.5em;
 }
 
-.sanyeticMain--Section2__contLStores--cntT{
+.sanyeticMain--Section2__contLStores--cntT {
     color: white;
     margin: 0px 10px;
 }
 
 /* Media Queries */
-@media (min-width: 768px) {
-    .sanyeticMain--Section1__article1{
+
+/* Dispositivos móviles */
+@media (max-width: 600px) {
+    .sanyeticMain--Section1__article1--imgLogoLeft,
+    .sanyeticMain--Section1__article1--imgLogoRight {
+        width: 70%;
+    }
+
+    .sanyeticMain--Section1__article1--contLogoTitleBtn__title {
+        font-size: 20px;
+    }
+
+    .sanyeticMain--Section2__contLTP--L {
+        width: 60%;
+    }
+
+    .sanyeticMain--Section2__contLTP--T {
+        width: 90%;
+        font-size: 24px;
+    }
+
+    .sanyeticMain--Section2__contLTP--P {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    .sanyeticMain--Section2__contLStores {
+        flex-direction: column;
+        width: 90%;
+    }
+}
+
+/* Tabletas */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .sanyeticMain--Section1__article1 {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .sanyeticMain--Section1__article1--imgLogoLeft,
+    .sanyeticMain--Section1__article1--imgLogoRight {
+        width: 40%;
+    }
+
+    .sanyeticMain--Section1__article1--contLogoTitleBtn__logo {
+        width: 50%;
+    }
+
+    .sanyeticMain--Section1__article1--contLogoTitleBtn__title {
+        font-size: 26px;
+    }
+
+    .sanyeticMain--Section2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sanyeticMain--Section2__contLTP--L {
+        width: 50%;
+    }
+
+    .sanyeticMain--Section2__contLTP--T {
+        width: 70%;
+        font-size: 32px;
+    }
+
+    .sanyeticMain--Section2__contLTP--P {
+        width: 70%;
+        font-size: 18px;
+    }
+
+    .sanyeticMain--Section2__contLStores {
+        flex-direction: row;
+        width: 70%;
+    }
+}
+
+/* Resoluciones de PC 1024 x 768 hasta 1920 x 1080 */
+@media (min-width: 1025px) and (max-width: 1920px) {
+    .sanyeticMain--Section1__article1 {
         flex-direction: row;
         justify-content: space-between;
     }
 
     .sanyeticMain--Section1__article1--imgLogoLeft,
-    .sanyeticMain--Section1__article1--imgLogoRight{
+    .sanyeticMain--Section1__article1--imgLogoRight {
         width: 25%;
-        height: 50%;
     }
 
-    .sanyeticMain--Section1__article1--contLogoTitleBtn__logo{
-        width: 50%;
+    .sanyeticMain--Section1__article1--contLogoTitleBtn__logo {
+        width: 40%;
     }
 
-    .sanyeticMain--Section1__article1--contLogoTitleBtn__title{
+    .sanyeticMain--Section1__article1--contLogoTitleBtn__title {
         font-size: 30px;
     }
 
-    .sanyeticMain--Section1__article1--contLogoTitleBtn__btn{
-        margin-top: 50px;
-    }
-
-    .sanyeticMain--Section2{
-        flex-direction: column;
-        align-items: flex-end;
-    }
-
-    .sanyeticMain--Section2__contLTP--L{
+    .sanyeticMain--Section2__contLTP--L {
         width: 30%;
     }
 
-    .sanyeticMain--Section2__contLTP--T{
-        width: 60%;
-        font-size: 40px;
+    .sanyeticMain--Section2__contLTP--T {
+        width: 50%;
+        font-size: 36px;
     }
 
-    .sanyeticMain--Section2__contLTP--P{
+    .sanyeticMain--Section2__contLTP--P {
         width: 50%;
         font-size: 20px;
     }
 
-    .sanyeticMain--Section2__contLStores{
-        flex-direction: column;
+    .sanyeticMain--Section2__contLStores {
+        flex-direction: row;
+        width: 40%;
+    }
+}
+
+/* Resoluciones de PC 4K */
+@media (min-width: 1921px) {
+    .sanyeticMain--Section1__article1--imgLogoLeft,
+    .sanyeticMain--Section1__article1--imgLogoRight {
+        width: 20%;
+    }
+
+    .sanyeticMain--Section1__article1--contLogoTitleBtn__logo {
+        width: 30%;
+    }
+
+    .sanyeticMain--Section1__article1--contLogoTitleBtn__title {
+        font-size: 40px;
+    }
+
+    .sanyeticMain--Section2__contLTP--L {
+        width: 20%;
+    }
+
+    .sanyeticMain--Section2__contLTP--T {
+        width: 40%;
+        font-size: 48px;
+    }
+
+    .sanyeticMain--Section2__contLTP--P {
+        width: 40%;
+        font-size: 24px;
+    }
+
+    .sanyeticMain--Section2__contLStores {
+        flex-direction: row;
         width: 30%;
     }
 }
